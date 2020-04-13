@@ -1,5 +1,5 @@
 Package: Google.AdminSDK.R
-Title: What the Package Does (One Line, Title Case)
+Title: R Wrapper for Google AdminSDK
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "David",
