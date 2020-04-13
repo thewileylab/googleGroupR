@@ -2,7 +2,7 @@
 #'
 #' Retrieve a listing of all groups in the specified GSuite domain.
 #'
-#' @param domain A Google domain: 'somedomain.org'
+#' @param domain A GSuite domain: 'somedomain.org'
 #'
 #' @return JSON object with information about all groups in the specified GSuite domain.
 #' @export
