@@ -7,11 +7,11 @@
 list_groups(domain)
 }
 \arguments{
-\item{domain}{A Google domain}
+\item{domain}{A Google domain: 'somedomain.org'}
 }
 \value{
 
 }
 \description{
-Retrieve a listing of all groups in the learnclinicalda
+Retrieve a listing of all groups in the specified GSuite domain.
 }

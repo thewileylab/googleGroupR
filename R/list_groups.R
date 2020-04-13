@@ -1,6 +1,6 @@
 #' List Groups
 #'
-#' Retrieve a listing of all groups in the learnclinicalda
+#' Retrieve a listing of all groups in the specified GSuite domain.
 #'
 #' @param domain A Google domain: 'somedomain.org'
 #'
