@@ -14,7 +14,7 @@ create_group(email, name = NULL, description = NULL)
 \item{description}{Optional. Provide a description for your group.}
 }
 \value{
-
+JSON object with information about the newly created group.
 }
 \description{
 Create a group in the a GSuite domain.

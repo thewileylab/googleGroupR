@@ -6,7 +6,7 @@
 #' @param name Optional. Provide a descriptive name for your group.
 #' @param description Optional. Provide a description for your group.
 #'
-#' @return
+#' @return JSON object with information about the newly created group.
 #' @export
 #' @importFrom httr add_headers content POST
 create_group <- function (email, name = NULL, description = NULL) {
