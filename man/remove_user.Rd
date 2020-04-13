@@ -14,7 +14,7 @@ remove_user(domain, group, email)
 \item{email}{The Gmail Account of the user that you would like to add to the group.}
 }
 \value{
-
+JSON object detailing when the user was deleted or and error if the user is no longer assosciated with the group.
 }
 \description{
 Remove a user from a Google Group

@@ -6,7 +6,7 @@
 #' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
 #' @param email The Gmail Account of the user that you would like to add to the group.
 #'
-#' @return
+#' @return JSON object detailing successful user addition attributes.
 #' @export
 #' @importFrom rlang .data
 #' @importFrom magrittr %>% extract2
@@ -47,7 +47,7 @@ add_user <- function(domain, group, email) {
 #' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
 #' @param email The Gmail Account of the user that you would like to add to the group.
 #'
-#' @return
+#' @return JSON object detailing when the user was deleted or and error if the user is no longer assosciated with the group.
 #' @export
 #' @importFrom rlang .data
 #' @importFrom magrittr %>% extract2
@@ -55,7 +55,7 @@ add_user <- function(domain, group, email) {
 #' @importFrom dplyr mutate filter pull
 #' @importFrom purrr map_chr
 #' @importFrom glue glue
-#' @importFrom httr add_headers DELETE
+#' @importFrom httr add_headers content DELETE
 remove_user <- function(domain, group, email) {
   groups <- list_groups(domain) %>%
     magrittr::extract2('groups') %>%

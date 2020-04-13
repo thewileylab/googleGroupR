@@ -14,7 +14,7 @@ add_user(domain, group, email)
 \item{email}{The Gmail Account of the user that you would like to add to the group.}
 }
 \value{
-
+JSON object detailing successful user addition attributes.
 }
 \description{
 Add a user to a Google Group
