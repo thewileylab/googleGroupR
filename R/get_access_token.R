@@ -9,7 +9,7 @@
 #' @importFrom httr content GET add_headers POST
 get_access_token <- function(cached_credentials = '~/.adminSDK_cache.rds') {
   # OAuth 2.0 Client ID
-  secrets <- jsonlite::fromJSON(txt = system.file('extdata/OAuth_ClientID/client_secret.json', package = 'Google.AdminSDK.R'))
+  secrets <- jsonlite::fromJSON(txt = system.file('extdata/OAuth_ClientID/client_secret.json', package = 'googleAdminSDKR'))
   # Scopes
   scopes <- "https://www.googleapis.com/auth/admin.directory.group https://www.googleapis.com/auth/apps.groups.settings"
   # Create Authorization Link
