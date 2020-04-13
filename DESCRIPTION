@@ -6,7 +6,7 @@ Authors@R:
            family = "Mayer",
            role = c("aut", "cre"),
            email = "david.mayer@cuanschutz.edu")
-Description: What the package does (one paragraph).
+Description: This package makes it easy to interact with Google Groups through R. Create/remove groups, add and remove group members, and much more!
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
