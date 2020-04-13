@@ -4,7 +4,7 @@
 #'
 #' @param domain A Google domain: 'somedomain.org'
 #'
-#' @return
+#' @return JSON object with information about all groups in the specified GSuite domain.
 #' @export
 #' @importFrom glue glue
 #' @importFrom httr add_headers content GET

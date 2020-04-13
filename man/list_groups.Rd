@@ -10,7 +10,7 @@ list_groups(domain)
 \item{domain}{A Google domain: 'somedomain.org'}
 }
 \value{
-
+JSON object with information about all groups in the specified GSuite domain.
 }
 \description{
 Retrieve a listing of all groups in the specified GSuite domain.
