@@ -15,3 +15,4 @@ Access token used to perform AdminSDK tasks
 \description{
 Get Access Token
 }
+\keyword{internal}
