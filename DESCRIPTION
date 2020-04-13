@@ -1,5 +1,5 @@
-Package: googleAdminSDKR
-Title: R Wrapper for Google AdminSDK
+Package: googleGroupR
+Title: R Wrapper for Google Groups using the AdminSDK
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "David",
