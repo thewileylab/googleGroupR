@@ -2,6 +2,8 @@
 #'
 #' @param cached_credentials Location to read from/store credentials.
 #'
+#' @keywords internal
+#'
 #' @return Access token used to perform AdminSDK tasks
 #' @export
 #' @importFrom glue glue
