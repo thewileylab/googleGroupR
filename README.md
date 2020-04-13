@@ -17,7 +17,7 @@ activities including:
 
   - Creating/Removing groups
   - Listing groups and group members
-  - Adding/Removing users from groups.
+  - Adding/Removing users from groups
 
 ## Installation
 
