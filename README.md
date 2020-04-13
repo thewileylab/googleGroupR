@@ -1,7 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# googleGroupR
+# googleGroupR <img src='man/figures/logo.png' align="right" height="138.5" />
+
+An R Wrapper for Google Groups Management using the AdminSDK.
 
 <!-- badges: start -->
 

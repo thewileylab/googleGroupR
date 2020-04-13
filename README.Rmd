@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# googleGroupR
+# googleGroupR <img src='man/figures/logo.png' align="right" height="138.5" />
+An R Wrapper for Google Groups Management using the AdminSDK.
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)

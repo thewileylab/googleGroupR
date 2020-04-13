@@ -1,5 +1,5 @@
 Package: googleGroupR
-Title: R Wrapper for Google Groups using the AdminSDK
+Title: An R Wrapper for Google Groups Management using the AdminSDK
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "David",
