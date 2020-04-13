@@ -1,4 +1,4 @@
-Package: Google.AdminSDK.R
+Package: googleAdminSDKR
 Title: R Wrapper for Google AdminSDK
 Version: 0.0.0.9000
 Authors@R: 
