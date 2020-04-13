@@ -45,7 +45,7 @@ get_access_token <- function(cached_credentials = '~/.adminSDK_cache.rds') {
                                client_secret=secrets$installed$client_secret)
           token <- httr::content(httr::POST(url = secrets$installed$token_uri, refresh_header, body = refresh_body, encode='form'))
           cached_token$access_token <- token$access_token
-          saveRDS(object = cached_token, file = 'tokens/token.rds')
+          saveRDS(object = cached_token, file = cached_credentials)
           token$access_token
         }
       } else if ('error' %in% names(token_info) ){
@@ -58,7 +58,7 @@ get_access_token <- function(cached_credentials = '~/.adminSDK_cache.rds') {
                              client_secret=secrets$installed$client_secret)
         token <- httr::content(httr::POST(url = secrets$installed$token_uri, refresh_header, body = refresh_body, encode='form'))
         cached_token$access_token <- token$access_token
-        saveRDS(object = cached_token, file = 'tokens/token.rds')
+        saveRDS(object = cached_token, file = cached_credentials)
         token$access_token
       } else{
         message('Not sure how to handle current token situation.')
