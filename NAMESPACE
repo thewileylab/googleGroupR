@@ -2,6 +2,7 @@
 
 export(add_user)
 export(create_group)
+export(delete_group)
 export(get_access_token)
 export(list_groups)
 export(remove_user)
