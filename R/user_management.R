@@ -13,9 +13,9 @@
 add_user <- function(domain, group, email) {
   group_id <- get_group_id(domain, group)
   access_token <- get_access_token()
-  add_user_url <- glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}/members')
+  add_user_url <- glue::glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}/members')
   add_user_header <- httr::add_headers('Content-Type' = 'application/json',
-                                       'Authorization' = glue('Bearer {access_token}'))
+                                       'Authorization' = glue::glue('Bearer {access_token}'))
   add_user_body <- list(role='MEMBER',
                         email=email)
   httr::content(httr::POST(url = add_user_url, add_user_header, body = add_user_body, encode='json'))
@@ -36,8 +36,8 @@ add_user <- function(domain, group, email) {
 remove_user <- function(domain, group, email) {
   group_id <- get_group_id(domain, group)
   access_token <- get_access_token()
-  remove_user_url <- glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}/members/{email}')
-  remove_user_header <- httr::add_headers('Authorization' = glue('Bearer {access_token}'),
+  remove_user_url <- glue::glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}/members/{email}')
+  remove_user_header <- httr::add_headers('Authorization' = glue::glue('Bearer {access_token}'),
                                           "Accept"= 'application/json')
   httr::DELETE(url = remove_user_url, remove_user_header)
 }

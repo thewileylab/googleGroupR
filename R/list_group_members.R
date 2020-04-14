@@ -17,7 +17,7 @@ list_group_members <- function (domain, group) {
   }else {
     group_id <- get_group_id(domain, group)
     access_token <- get_access_token()
-    auth_header <- httr::add_headers('Authorization' = glue('Bearer {access_token}'))
+    auth_header <- httr::add_headers('Authorization' = glue::glue('Bearer {access_token}'))
     httr::content(httr::GET(glue::glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}/members'),
                             auth_header)
     )

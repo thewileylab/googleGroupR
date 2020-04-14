@@ -13,7 +13,7 @@ create_group <- function (email, name = NULL, description = NULL) {
   access_token <- get_access_token()
   groups_url <- 'https://www.googleapis.com/admin/directory/v1/groups'
   auth_header <- httr::add_headers('Content-Type'= 'application/json',
-                                   'Authorization' = glue('Bearer {access_token}'))
+                                   'Authorization' = glue::glue('Bearer {access_token}'))
   create_group_body <- list(email = email,
                             name= name,
                             description= description)
@@ -34,8 +34,8 @@ create_group <- function (email, name = NULL, description = NULL) {
 delete_group <- function (domain, group) {
   group_id <- get_group_id(domain, group)
   access_token <- get_access_token()
-  delete_group_url <- glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}')
-  delete_group_header <- httr::add_headers('Authorization' = glue('Bearer {access_token}'),
+  delete_group_url <- glue::glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}')
+  delete_group_header <- httr::add_headers('Authorization' = glue::glue('Bearer {access_token}'),
                                            "Accept"= 'application/json')
   httr::DELETE(url = delete_group_url, delete_group_header)
 }
