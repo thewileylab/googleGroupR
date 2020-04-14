@@ -8,6 +8,7 @@ Authors@R:
            email = "david.mayer@cuanschutz.edu")
 Description: This package makes it easy to interact with Google Groups through R. Create/remove groups, add and remove group members, and much more!
 License: MIT + file LICENSE
+URL: https://thewileylab.github.io/googleGroupR/, https://github.com/thewileylab/googleGroupR
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
