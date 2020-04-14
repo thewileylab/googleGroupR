@@ -1,0 +1,14 @@
+reference:
+  - title: "Group Management Functions"
+    desc: "Use these functions to manage your groups."
+    contents:
+      - list_groups
+      - create_group
+      - delete_group
+  - title: "User Management Functions"
+    desc: "Use these functions to manage the users in your groups."
+    contents:
+      - list_group_members
+      - add_user
+      - remove_user
+
