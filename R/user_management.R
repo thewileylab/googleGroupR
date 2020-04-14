@@ -2,9 +2,9 @@
 #'
 #' Add a user to a Google Group
 #'
-#' @param domain A GSuite domain: 'somedomain.org'
-#' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
-#' @param email The Gmail Account of the user that you would like to add to the group.
+#' @param domain Required. A GSuite domain: 'somedomain.org'
+#' @param group Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
+#' @param email Required. The Gmail Account of the user that you would like to add to the group.
 #'
 #' @return JSON object detailing successful user addition attributes.
 #' @export
@@ -25,9 +25,9 @@ add_user <- function(domain, group, email) {
 #'
 #' Remove a user from a Google Group
 #'
-#' @param domain A GSuite domain: 'somedomain.org'
-#' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
-#' @param email The Gmail Account of the user that you would like to add to the group.
+#' @param domain Required. A GSuite domain: 'somedomain.org'
+#' @param group Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
+#' @param email Required. The Gmail Account of the user that you would like to add to the group.
 #'
 #' @return If successful, an empty JSON responose will be received.
 #' @export

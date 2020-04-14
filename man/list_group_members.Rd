@@ -7,9 +7,9 @@
 list_group_members(domain, group)
 }
 \arguments{
-\item{domain}{A GSuite domain: 'somedomain.org'}
+\item{domain}{Required. A GSuite domain: 'somedomain.org'}
 
-\item{group}{The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')#'}
+\item{group}{Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')#'}
 }
 \value{
 

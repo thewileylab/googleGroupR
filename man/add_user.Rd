@@ -7,11 +7,11 @@
 add_user(domain, group, email)
 }
 \arguments{
-\item{domain}{A GSuite domain: 'somedomain.org'}
+\item{domain}{Required. A GSuite domain: 'somedomain.org'}
 
-\item{group}{The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')}
+\item{group}{Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')}
 
-\item{email}{The Gmail Account of the user that you would like to add to the group.}
+\item{email}{Required. The Gmail Account of the user that you would like to add to the group.}
 }
 \value{
 JSON object detailing successful user addition attributes.

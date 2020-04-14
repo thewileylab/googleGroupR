@@ -7,7 +7,7 @@
 list_groups(domain)
 }
 \arguments{
-\item{domain}{A GSuite domain: 'somedomain.org'}
+\item{domain}{Required. A GSuite domain: 'somedomain.org'}
 }
 \value{
 JSON object with information about all groups in the specified GSuite domain.
