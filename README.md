@@ -15,7 +15,7 @@ The goal of googleGroupR is to make it easier to programmatically
 interact with the Google AdminSDK from within R for Group management
 activities including:
 
-  - Creating/Removing groups
+  - Creating/Deleting groups
   - Listing groups and group members
   - Adding/Removing users from groups
 
