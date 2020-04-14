@@ -29,28 +29,10 @@ create_group <- function (email, name = NULL, description = NULL) {
 #'
 #' @return If successful, an empty JSON responose will be received.
 #' @export
-#' @importFrom rlang .data
-#' @importFrom magrittr %>% extract2
-#' @importFrom tibble enframe
-#' @importFrom dplyr mutate filter pull
-#' @importFrom purrr map_chr
 #' @importFrom glue glue
 #' @importFrom httr add_headers content DELETE
 delete_group <- function (domain, group) {
-  groups <- list_groups(domain) %>%
-    magrittr::extract2('groups') %>%
-    tibble::enframe(name = NULL, value = 'group_info') %>%
-    dplyr::mutate(group_name = purrr::map_chr(.x = .data$group_info,
-                                              ~ .x %>%
-                                                magrittr::extract2('name')
-    ),
-    group_id = purrr::map_chr(.x = .data$group_info,
-                              ~ .x %>%
-                                magrittr::extract2('id'))
-    )
-  group_id <- groups %>%
-    dplyr::filter(.data$group_name == group) %>%
-    dplyr::pull(.data$group_id)
+  group_id <- get_group_id(domain, group)
   access_token <- get_access_token()
   delete_group_url <- glue('https://www.googleapis.com/admin/directory/v1/groups/{group_id}')
   delete_group_header <- httr::add_headers('Authorization' = glue('Bearer {access_token}'),
