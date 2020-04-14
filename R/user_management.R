@@ -47,7 +47,7 @@ add_user <- function(domain, group, email) {
 #' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
 #' @param email The Gmail Account of the user that you would like to add to the group.
 #'
-#' @return JSON object detailing when the user was deleted or and error if the user is no longer assosciated with the group.
+#' @return If successful, an empty JSON responose will be received.
 #' @export
 #' @importFrom rlang .data
 #' @importFrom magrittr %>% extract2
