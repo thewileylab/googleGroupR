@@ -9,7 +9,7 @@ get_group_id(domain, group)
 \arguments{
 \item{domain}{A GSuite domain: 'somedomain.org'}
 
-\item{group}{The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')#'}
+\item{group}{The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')}
 }
 \value{
 

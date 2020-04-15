@@ -4,7 +4,7 @@
 #'
 #'
 #' @param domain A GSuite domain: 'somedomain.org'
-#' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')#'
+#' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
 #'
 #' @keywords internal
 #'
