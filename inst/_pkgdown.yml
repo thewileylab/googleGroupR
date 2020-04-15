@@ -8,6 +8,7 @@ reference:
   - title: "User Management Functions"
     desc: "Use these functions to manage the users in your groups."
     contents:
+      - list_user_info
       - list_group_members
       - add_user
       - remove_user

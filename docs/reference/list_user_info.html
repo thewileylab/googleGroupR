@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get Group ID — get_group_id • googleGroupR</title>
+<title>List User Info — list_user_info • googleGroupR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,8 @@
 
 
 
-<meta property="og:title" content="Get Group ID — get_group_id" />
-<meta property="og:description" content="Retrieve the Group ID assosciated with a Group Name" />
+<meta property="og:title" content="List User Info — list_user_info" />
+<meta property="og:description" content="Retrieve a user specific directory info, such as primary email address." />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -116,16 +116,16 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get Group ID</h1>
-    <small class="dont-index">Source: <a href='https://github.com/thewileylab/googleGroupR/blob/master/R/get_group_id.R'><code>R/get_group_id.R</code></a></small>
-    <div class="hidden name"><code>get_group_id.Rd</code></div>
+    <h1>List User Info</h1>
+    <small class="dont-index">Source: <a href='https://github.com/thewileylab/googleGroupR/blob/master/R/list_user_info.R'><code>R/list_user_info.R</code></a></small>
+    <div class="hidden name"><code>list_user_info.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Retrieve the Group ID assosciated with a Group Name</p>
+    <p>Retrieve a user specific directory info, such as primary email address.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>get_group_id</span>(<span class='no'>domain</span>, <span class='no'>group</span>)</pre>
+    <pre class="usage"><span class='fu'>list_user_info</span>(<span class='no'>domain</span>, <span class='no'>group</span>, <span class='no'>memberKey</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -138,13 +138,15 @@
       <th>group</th>
       <td><p>The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')</p></td>
     </tr>
+    <tr>
+      <th>memberKey</th>
+      <td><p>The user's unique ID</p></td>
+    </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    
-
-
+    <p>JSON object with directory information pertaining to the user's unique ID.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
