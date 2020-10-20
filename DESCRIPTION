@@ -24,4 +24,6 @@ Imports:
     rlang,
     tibble
 Suggests:
-    sodium
+    sodium,
+    spelling
+Language: en-US

@@ -12,7 +12,7 @@ delete_group(domain, group)
 \item{group}{The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')}
 }
 \value{
-If successful, an empty JSON responose will be received.
+If successful, an empty JSON response will be received.
 }
 \description{
 Delete a group in a GSuite domain.

@@ -12,7 +12,7 @@ list_group_members(domain, group)
 \item{group}{Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')#'}
 }
 \value{
-
+A list of Google users belonging to the requested group.
 }
 \description{
 Retrieves a paginated list of all members in a group.

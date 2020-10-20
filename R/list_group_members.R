@@ -5,7 +5,7 @@
 #' @param domain Required. A GSuite domain: 'somedomain.org'
 #' @param group Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')#'
 #'
-#' @return
+#' @return A list of Google users belonging to the requested group.
 #' @export
 #' @importFrom glue glue
 #' @importFrom httr add_headers content GET

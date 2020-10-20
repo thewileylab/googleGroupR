@@ -12,9 +12,9 @@ get_group_id(domain, group)
 \item{group}{The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')}
 }
 \value{
-
+Google Group ID
 }
 \description{
-Retrieve the Group ID assosciated with a Group Name
+Retrieve the Group ID associated with a Group Name
 }
 \keyword{internal}

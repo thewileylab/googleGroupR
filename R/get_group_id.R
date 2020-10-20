@@ -1,6 +1,6 @@
 #' Get Group ID
 #'
-#' Retrieve the Group ID assosciated with a Group Name
+#' Retrieve the Group ID associated with a Group Name
 #'
 #'
 #' @param domain A GSuite domain: 'somedomain.org'
@@ -8,7 +8,7 @@
 #'
 #' @keywords internal
 #'
-#' @return
+#' @return Google Group ID
 #' @export
 #' @importFrom rlang .data
 #' @importFrom magrittr %>% extract2

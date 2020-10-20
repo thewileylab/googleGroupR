@@ -27,7 +27,7 @@ create_group <- function (email, name = NULL, description = NULL) {
 #' @param domain A GSuite domain: 'somedomain.org'
 #' @param group The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')
 #'
-#' @return If successful, an empty JSON responose will be received.
+#' @return If successful, an empty JSON response will be received.
 #' @export
 #' @importFrom glue glue
 #' @importFrom httr add_headers content DELETE
