@@ -22,7 +22,7 @@ activities including:
 ## Installation
 
 You can install the development version from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/thewileylab/googleGroupR) with:
 
 ``` r
 # install.packages("devtools")
