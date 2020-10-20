@@ -11,7 +11,7 @@ remove_user(domain, group, email)
 
 \item{group}{Required. The name of a Google Group. A listing of groups in your domain can be obtained by running list_groups(domain = 'mydomain.org')}
 
-\item{email}{Required. The Gmail Account of the user that you would like to add to the group.}
+\item{email}{Required. The Gmail Account of the user that you would like to remove from the group.}
 }
 \value{
 If successful, an empty JSON response will be received.
