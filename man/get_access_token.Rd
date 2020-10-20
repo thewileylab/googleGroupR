@@ -4,7 +4,7 @@
 \alias{get_access_token}
 \title{Get Access Token}
 \usage{
-get_access_token(cached_credentials = "~/.adminSDK_cache.rds")
+get_access_token(cached_credentials = "~/.googleGroupR_cache.rds")
 }
 \arguments{
 \item{cached_credentials}{Location to read from/store credentials.}
