@@ -6,19 +6,22 @@ Authors@R:
            family = "Mayer",
            role = c("aut", "cre"),
            email = "david.mayer@cuanschutz.edu")
-Description: This package makes it easy to interact with Google Groups through R. Create/remove groups, add and remove group members, and much more!
+Description: This package makes it easy to interact with Google Groups through R. Create/remove groups, add and remove group members, and more!
 License: MIT + file LICENSE
 URL: https://thewileylab.github.io/googleGroupR/, https://github.com/thewileylab/googleGroupR
+BugReports: https://github.com/thewileylab/googleGroupR/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
 Imports: 
-    glue,
-    jsonlite,
-    httr,
     dplyr,
+    glue,
+    httr,
+    jsonlite,
     magrittr,
     purrr,
     rlang,
     tibble
+Suggests:
+    sodium
