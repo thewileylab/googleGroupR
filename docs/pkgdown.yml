@@ -2,5 +2,8 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2020-10-22T14:55Z
+last_built: 2020-10-26T18:07Z
+urls:
+  reference: googlegroupr.thewileylab.org/reference
+  article: googlegroupr.thewileylab.org/articles
 

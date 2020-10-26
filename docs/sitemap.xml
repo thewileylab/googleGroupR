@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>googlegroupr.thewileylab.org/index.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/add_user.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/create_group.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/delete_group.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/get_access_token.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/get_group_id.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/internal-assets.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/list_group_members.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/list_groups.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/list_user_info.html</loc>
+  </url>
+  <url>
+    <loc>googlegroupr.thewileylab.org/reference/remove_user.html</loc>
+  </url>
+</urlset>
