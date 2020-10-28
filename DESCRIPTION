@@ -1,14 +1,13 @@
 Package: googleGroupR
 Title: An R Wrapper for Google Groups Management using the AdminSDK
 Version: 0.0.1.9001
-Authors@R: 
-    person(given = "David",
-           family = "Mayer",
-           role = c("aut", "cre"),
-           email = "david.mayer@cuanschutz.edu")
+Authors@R: c(
+            person(given = "David", family = "Mayer", role = c("aut", "cre"), email = "david.mayer@cuanschutz.edu"),
+            person(given = "The Wiley Lab", role = c("cph", "fnd"))
+            )
 Description: This package makes it easy to interact with Google Groups through R. Create/remove groups, add and remove group members, and more!
 License: MIT + file LICENSE
-URL: https://thewileylab.github.io/googleGroupR/, https://github.com/thewileylab/googleGroupR
+URL: https://googlegroupr.thewileylab.org/, https://github.com/thewileylab/googleGroupR
 BugReports: https://github.com/thewileylab/googleGroupR/issues
 Encoding: UTF-8
 LazyData: true
