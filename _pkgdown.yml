@@ -12,7 +12,7 @@ home:
 authors:
   The Wiley Lab:
     href: https://www.thewileylab.org/
-    html: <img src="https://raw.githubusercontent.com/thewileylab/googleGroupR/44e5b33cb7b61ef20dbd8467541b2f73b6968a8a/man/figures/WileyLab.svg" height="24" />
+    html: <img src="https://raw.githubusercontent.com/thewileylab/googleGroupR/master/man/figures/WileyLab.svg" height="24" />
 reference:
   - title: "Group Management Functions"
     desc: "Use these functions to manage your groups."
