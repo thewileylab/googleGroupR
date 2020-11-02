@@ -8,7 +8,7 @@ navbar:
 home:
   links:
   - text: Additional WileyLab tools
-    href: https://www.thewileylab.org/software/
+    href: https://www.thewileylab.org/software
 authors:
   The Wiley Lab:
     href: https://www.thewileylab.org/
