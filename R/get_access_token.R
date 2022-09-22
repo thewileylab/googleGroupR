@@ -31,7 +31,12 @@ print.hidden_fn <- function(x, ...) {
 #' @importFrom glue glue
 #' @importFrom jsonlite fromJSON
 #' @importFrom httr content GET add_headers oauth_listener POST
-get_access_token <- function(cached_credentials = '~/.googleGroupR_cache.rds') {
+get_access_token <- function(cached_credentials = '~/.config/googleGroupR/.googleGroupR_cache.rds') {
+  # Cache Directory Setup
+  cache_dir <- dirname(cached_credentials)
+  if(dir.exists(cache_dir) == FALSE) {
+    dir.create(cache_dir)
+  }
   # OAuth 2.0 Info
   ## Token URI
     token_uri <- "https://oauth2.googleapis.com/token"
