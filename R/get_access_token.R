@@ -43,9 +43,10 @@ get_access_token <- function(cached_credentials = '~/.googleGroupR_cache.rds') {
   if(file.exists(cached_credentials) ) {
     cached_token <- readRDS(cached_credentials)
     if ('error' %in% names(cached_token) ) {
-      message(glue::glue('Please visit the following URL to generate an authorization code: {auth_link}'))
-      auth_code <- readline(prompt =  glue::glue('Enter authorization code:'))
-      access_token_body <- list(code=auth_code,
+      # message(glue::glue('Please visit the following URL to generate an authorization code: {auth_link}'))
+      # auth_code <- readline(prompt =  glue::glue('Enter authorization code:'))
+      auth_code <- oauth_listener(auth_link, is_interactive = interactive())
+      access_token_body <- list(code=auth_code$code,
                                 client_id=installed_app()$key,
                                 client_secret=installed_app()$secret,
                                 redirect_uri=installed_app()$redirect_uri,
