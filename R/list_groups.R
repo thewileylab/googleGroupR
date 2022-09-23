@@ -14,7 +14,6 @@ list_groups <- function(domain) {
     rlang::inform(rlang::format_error_bullets(c("x" = 'Please specify a GSuite domain.')))
     } else {
       access_token <- get_access_token()
-      Sys.sleep(5)
       if(is.null(access_token)){
         rlang::inform(rlang::format_error_bullets("x" = 'Please provide authentication credentials.'))
         } else {
