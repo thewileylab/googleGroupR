@@ -104,7 +104,7 @@ get_access_token <- function(cached_credentials = '~/.config/googleGroupR/.googl
                 }
           }
     } else {
-      if(Sys.getenv('RSTUDIO_HTTP_REFERER') == '') {
+      if(Sys.getenv('RSTUDIO_PROGRAM_MODE') == 'desktop') {
         auth_code <- oauth_listener(auth_link, is_interactive = interactive())
         access_token_body <- list(code=auth_code$code,
                                   client_id=installed_app()$key,
