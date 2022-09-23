@@ -31,6 +31,7 @@ print.hidden_fn <- function(x, ...) {
 #' @importFrom glue glue
 #' @importFrom jsonlite fromJSON
 #' @importFrom httr content GET add_headers oauth_listener POST
+#' @importFrom rlang format_error_bullets inform
 get_access_token <- function(cached_credentials = '~/.config/googleGroupR/.googleGroupR_cache.rds') {
   # Cache Directory Setup
   cache_dir <- dirname(cached_credentials)
@@ -106,16 +107,21 @@ get_access_token <- function(cached_credentials = '~/.config/googleGroupR/.googl
                 }
           }
     } else {
-      # message(glue::glue('Please visit the following URL to generate an authorization code: {auth_link}'))
-      # auth_code <- readline(prompt =  glue::glue('Enter authorization code:'))
-      auth_code <- oauth_listener(auth_link, is_interactive = interactive())
-      access_token_body <- list(code=auth_code$code,
-                                client_id=installed_app()$key,
-                                client_secret=installed_app()$secret,
-                                redirect_uri=installed_app()$redirect_uri,
-                                grant_type='authorization_code')
-      token <- httr::content(httr::POST(url = token_uri, body = access_token_body))
-      saveRDS(object = token, file = cached_credentials)
-      token$access_token
+      if(Sys.getenv('RSTUDIO_HTTP_REFERER' == '')) {
+        # message(glue::glue('Please visit the following URL to generate an authorization code: {auth_link}'))
+
+        auth_code <- oauth_listener(auth_link, is_interactive = interactive())
+        access_token_body <- list(code=auth_code$code,
+                                  client_id=installed_app()$key,
+                                  client_secret=installed_app()$secret,
+                                  redirect_uri=installed_app()$redirect_uri,
+                                  grant_type='authorization_code')
+        token <- httr::content(httr::POST(url = token_uri, body = access_token_body))
+        saveRDS(object = token, file = cached_credentials)
+        token$access_token
+        } else {
+          rlang::inform(rlang::format_error_bullets(c("x" = glue::glue("I'm sorry, Google no longer allows Out Of Band (OOB) OAuth 2.0 authentication flows for server environments. \n * Please generate credentials using this package locally and upload to an appropriate location, {cache_dir} by default."),
+                                                      "i" = 'https://developers.googleblog.com/2022/02/making-oauth-flows-safer.html')))
+          }
       }
     }
