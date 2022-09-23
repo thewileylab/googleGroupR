@@ -8,9 +8,10 @@
 #' @export
 #' @importFrom glue glue
 #' @importFrom httr add_headers content GET
+#' @importFrom rlang format_error_bullets inform
 list_groups <- function(domain) {
   if (missing(domain) ) {
-    message('Please specify a GSuite domain.')
+    rlang::inform(rlang::format_error_bullets(c("x" = 'Please specify a GSuite domain.')))
   } else {
   access_token <- get_access_token()
   auth_header <- httr::add_headers('Authorization' = glue::glue('Bearer {access_token}'))
