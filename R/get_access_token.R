@@ -119,7 +119,7 @@ get_access_token <- function(cached_credentials = '~/.config/googleGroupR/.googl
         saveRDS(object = token, file = cached_credentials)
         invisible(token$access_token)
         } else {
-          rlang::inform(rlang::format_error_bullets(c("x" = glue::glue("I'm sorry, Google no longer allows Out Of Band (OOB) OAuth 2.0 authentication flows for server environments. \n * Please generate credentials using this package locally and upload to an appropriate location, {cache_dir} by default."),
+          rlang::inform(rlang::format_error_bullets(c("x" = glue::glue("I'm sorry, Google no longer allows Out Of Band (OOB) OAuth 2.0 authentication flows for server environments. \n - Please generate credentials using this package locally and upload to an appropriate location, {cache_dir} by default."),
                                                       "i" = 'https://developers.googleblog.com/2022/02/making-oauth-flows-safer.html')))
           }
       }
