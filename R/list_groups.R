@@ -15,7 +15,7 @@ list_groups <- function(domain) {
     } else {
       access_token <- get_access_token()
       if(is.null(access_token)){
-        rlang::inform(rlang::format_error_bullets("x" = 'Please provide authentication credentials.'))
+        rlang::inform(rlang::format_error_bullets(c("x" = 'Error: Unauthenticated')))
         } else {
           auth_header <- httr::add_headers('Authorization' = glue::glue('Bearer {access_token}'))
           httr::content(httr::GET(glue::glue('https://www.googleapis.com/admin/directory/v1/groups/?domain={domain}'),
