@@ -9,15 +9,16 @@ An R Wrapper for Google Groups Management using the AdminSDK.
 
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![R-CMD-check](https://github.com/thewileylab/googleGroupR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/thewileylab/googleGroupR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of googleGroupR is to make it easier to programmatically
 interact with the Google AdminSDK from within R for Group management
 activities including:
 
-  - Creating/Deleting groups
-  - Listing groups and group members
-  - Adding/Removing users from groups
+-   Creating/Deleting groups
+-   Listing groups and group members
+-   Adding/Removing users from groups
 
 ## Installation
 
