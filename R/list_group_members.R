@@ -9,11 +9,12 @@
 #' @export
 #' @importFrom glue glue
 #' @importFrom httr add_headers content GET
+#' @importFrom rlang format_error_bullets inform
 list_group_members <- function (domain, group) {
   if (missing(domain) ) {
-    message('Please specify a GSuite domain.')
+    rlang::inform(rlang::format_error_bullets(c("x"='Please specify a GSuite domain.')))
   } else if (missing(group)) {
-    message('Please specify a group name.')
+    rlang::inform(rlang::format_error_bullets(c("x"='Please specify a group name.')))
   }else {
     group_id <- get_group_id(domain, group)
     access_token <- get_access_token()
